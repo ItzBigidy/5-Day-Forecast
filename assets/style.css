@@ -22,7 +22,7 @@ p {
 .container {
     position: relative;
     width: 800px;
-    height: 900px;
+    height: 105px;
     padding: 15px;
     border-radius: 30px;
     background: transparent;
@@ -97,7 +97,7 @@ p {
 }
 
 .weather-box img{
-    width: 60%;
+    width: 17%;
     margin-top: 30px;
 }
 
@@ -126,6 +126,7 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    text-align: center;
 }
 
 .weather-details .humidity, .weather-details .wind {
@@ -147,8 +148,12 @@ p {
 
 .weather-details span {
     color: rgb(189, 196, 201);
-    font-size: 2px;
+    font-size: 22px;
     font-weight: 500;
+    
+    width: 100%;
+    padding-bottom: 2px;
+    
 }
 
 .weather-details p{
@@ -157,7 +162,7 @@ p {
     font-weight: 500;
 }
 
-.fade-in {
+.fadeIn {
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
