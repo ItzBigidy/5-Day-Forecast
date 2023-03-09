@@ -252,7 +252,7 @@ search.addEventListener("click", () => {
           weatherDetails.classList.add("fadeIn");
           container.style.height = "98%";
 
-          
+          console.log(json)
           
       
           
