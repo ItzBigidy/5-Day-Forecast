@@ -21,19 +21,19 @@ p {
 
 .container {
     position: relative;
-    width: 800px;
+    width: 90%;
     height: 105px;
-    padding: 15px;
     border-radius: 30px;
     background: transparent;
     backdrop-filter: blur(12px);
     overflow: hidden;
     border: 1px solid seashell;
     transition: 600ms ease-out;
+    justify-content: center;
 }
 
 .title-box {
-    padding: 15px 25px 0px 25px;
+    padding: 30px 25px 0px 25px;
     display: flex;
     width: 100%;
     height: min-content;
@@ -43,7 +43,7 @@ p {
 }
 
 .search-bar {
-    width: 350px;
+    width: 90%;
     height: 40px;
     text-align: center;
     background: transparent;
@@ -92,20 +92,38 @@ p {
     transition: none;
 }
 
+.main-card {
+    width: 30%;
+    margin-top: 33px;
+}
+
+.side-card {
+    border: 1px solid rgb(189, 196, 201);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-card .weather-box img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 .weather-box {
     text-align: center;
 }
 
 .weather-box img{
-    width: 17%;
-    margin-top: 30px;
+    width: 140px;
 }
 
 .weather-box .temperature{
     position: relative;
     font-size: 4rem;
     font-weight: 800;
-    margin-top: 30px;
     margin-left: -16px;
 }
 
@@ -122,10 +140,8 @@ p {
 }
 
 .weather-details {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
     text-align: center;
 }
 
@@ -134,10 +150,8 @@ p {
     justify-content: center;
     align-items: center;
     height: 100px;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 22px 0px 22px;
 }
-
-
 
 .weather-details i {
     color: rgb(189, 196, 201);
@@ -149,11 +163,8 @@ p {
 .weather-details span {
     color: rgb(189, 196, 201);
     font-size: 22px;
-    font-weight: 500;
-    
-    width: 100%;
-    padding-bottom: 2px;
-    
+    font-weight: 500; 
+    padding-bottom: 2px; 
 }
 
 .weather-details p{
@@ -162,12 +173,84 @@ p {
     font-weight: 500;
 }
 
+.card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section {
+    display: flex;
+    height: 49%;
+    
+}
+
 .fadeIn {
     animation: 0.5s fadeIn forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 @keyframes fadeIn {
     to {scale: 1;
     opacity: 1;
 }}
+
+section .weather-box img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section .weather-box .temperature{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: -16px;
+}
+
+section .weather-box .temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1rem;
+}
+
+section .weather-box .description {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+section .weather-details {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section .weather-details .humidity, section .weather-details .wind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0px 22px 0px 22px;
+}
+
+section .weather-details i {
+    color: rgb(189, 196, 201);
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+section .weather-details span {
+    color: rgb(189, 196, 201);
+    font-size: 12px;
+    font-weight: 500; 
+    padding-bottom: 2px; 
+}
+
+section .weather-details p{
+    color: rgb(189, 196, 201);
+    font-size: 15px;
+    font-weight: 500;
+}
