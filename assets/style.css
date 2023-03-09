@@ -7,7 +7,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100vmin;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +20,10 @@ p {
 }
 
 .container {
+    padding: auto;
     position: relative;
     width: 90%;
-    height: 105px;
+    height: 100px;
     border-radius: 30px;
     background: transparent;
     backdrop-filter: blur(12px);
@@ -30,6 +31,7 @@ p {
     border: 1px solid seashell;
     transition: 600ms ease-out;
     justify-content: center;
+    align-items: center;
 }
 
 .title-box {
@@ -93,7 +95,7 @@ p {
 }
 
 .main-card {
-    width: 30%;
+    width: 40%;
     margin-top: 33px;
 }
 
@@ -101,9 +103,12 @@ p {
     border: 1px solid rgb(189, 196, 201);
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .side-card .weather-box img{
@@ -113,7 +118,9 @@ p {
 }
 
 .weather-box {
+    
     text-align: center;
+    
 }
 
 .weather-box img{
@@ -150,7 +157,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 100px;
-    padding: 0px 22px 0px 22px;
+    width: 30%;
 }
 
 .weather-details i {
@@ -165,6 +172,7 @@ p {
     font-size: 22px;
     font-weight: 500; 
     padding-bottom: 2px; 
+    width: 50px;
 }
 
 .weather-details p{
@@ -182,9 +190,8 @@ p {
 
 .section {
     display: flex;
-    height: 49%;
-    
-}
+    height: 54%;
+} 
 
 .fadeIn {
     animation: 0.5s fadeIn forwards;
@@ -196,61 +203,66 @@ p {
     opacity: 1;
 }}
 
-section .weather-box img{
-    position: absolute;
-    top: 0;
-    right: 0;
+.section .side-card .weather-box {
+    
+    display: block;
+    justify-content: end;
+    align-items: start;
+    margin-bottom: -400px;
 }
 
-section .weather-box .temperature{
+.section .weather-box img{
+    width: 30%;
+}
+
+.section .weather-box .temperature{
     position: relative;
     font-size: 1rem;
     font-weight: 800;
     margin-left: -16px;
 }
 
-section .weather-box .temperature span {
-    position: absolute;
+.section .weather-box .temperature span {
     margin-left: 4px;
     font-size: 1rem;
 }
 
-section .weather-box .description {
+.section .weather-box .description {
     font-size: 12px;
     font-weight: 500;
     text-transform: capitalize;
 }
 
-section .weather-details {
+.section .weather-details {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    margin-bottom: -65px;
 }
 
-section .weather-details .humidity, section .weather-details .wind {
+.section .weather-details .humidity, .section .weather-details .wind {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     padding: 0px 22px 0px 22px;
 }
 
-section .weather-details i {
+.section .weather-details i {
     color: rgb(189, 196, 201);
     font-size: 18px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
-section .weather-details span {
+.section .weather-details span {
     color: rgb(189, 196, 201);
-    font-size: 12px;
-    font-weight: 500; 
+    font-size: 17px;
+    font-weight: 900; 
     padding-bottom: 2px; 
 }
 
-section .weather-details p{
+.section .weather-details p{
     color: rgb(189, 196, 201);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 800;
 }

@@ -4,7 +4,7 @@ const weatherBox = document.querySelector(".weather-box");
 const weatherDetails = document.querySelector(".weather-details");
 const error = document.querySelector(".error-image");
 
-search.addEventListener("click", (event) => {
+search.addEventListener("click", () => {
   const APIkey = "3d0687ea34b9548ce1cbb3d4bd1d25c3";
   const city = document.querySelector(".search-bar").value;
 
@@ -217,27 +217,27 @@ search.addEventListener("click", (event) => {
 
           switch (json.list[38].weather[0].main) {
             case "Clear":
-              image1.src = "assets/images/clear.png";
+              image5.src = "assets/images/clear.png";
               break;
 
             case "Rain":
-              image1.src = "assets/images/rain.png";
+              image5.src = "assets/images/rain.png";
               break;
 
             case "Snow":
-              image1.src = "assets/images/snow.png";
+              image5.src = "assets/images/snow.png";
               break;
 
             case "Clouds":
-              image1.src = "assets/images/clouds.png";
+              image5.src = "assets/images/clouds.png";
               break;
 
             case "Haze":
-              image1.src = "assets/images/haze.png";
+              image5.src = "assets/images/haze.png";
               break;
 
             default:
-              image1.src = "";
+              image5.src = "";
           }
 
           document.querySelector('.day-5 .weather-box .temperature').innerHTML =
